@@ -265,7 +265,7 @@ ul {
 }
 @media (min-width: 1px) and (max-width: 1100px)  {
     body {
-        font-size: 18px;
+        font-size: 17px;
     }
     .main-app{
         margin: 5% 9% 3% 9%;
@@ -291,7 +291,7 @@ ul {
 
 @media (min-width: 1px) and (max-width: 1000px)  {
     body {
-        font-size: 17px;
+        font-size: 16px;
     }
     .main-app{
         margin: 6% 7% 3% 7%;
@@ -315,6 +315,9 @@ ul {
 }
 
 @media (min-width: 1px) and (max-width: 825px)  {
+    body {
+        font-size: 15px;
+    }
     .main-app{
         margin: 6% 6% 3% 6%;
     }
@@ -334,7 +337,7 @@ ul {
 
 @media (min-width: 1px) and (max-width: 750px)  {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
     .main-app{
         margin: 6% 5% 3% 5%;
@@ -368,12 +371,12 @@ ul {
 } 
 @media (min-width: 1px) and (max-width: 675px)  {
     body {
-        font-size: 14px;
+        font-size: 13px;
     }
     }
 @media (min-width: 1px) and (max-width: 650px)  {
     body {
-        font-size: 13px;
+        font-size: 12px;
     }
     .main-app{
         margin: 6% 4% 3% 4%;
@@ -400,12 +403,12 @@ ul {
 }
 @media (min-width: 1px) and (max-width: 575px)  {
     body {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 @media (min-width: 1px) and (max-width: 500px)  {
     body {
-        font-size: 14px;
+        font-size: 11px;
     }
     .search_bar {  
         font-size: .85em;
