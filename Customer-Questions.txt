@@ -17,13 +17,13 @@ Answer 1:
 
 	Hi George,
 
-	I would be happy to shed more light on those concepts and provide examples of useful Custom Ranking metrics.
+	I would be happy to expand on those concepts and provide examples of useful Custom Ranking metrics.
 
-	Indexing is the process of grouping your data into indices, which are collections of data. Each entry in an index is a record, much like a row in a table, and every record has the same set of attributes.
+	Indexing is the process of grouping your data into indices, which are collections of data. Each entry in an index is a record, much like a row in a table, and every record has the same set of attributes. For example you can search an index for all the records of people with the name 'John'.
 
 	Useful Custom Ranking metrics are generally numerical attributes that represent the popularity/importance of your records. Example attributes include ratings, number of views, and quantity of sales. In addition to the textual relevance based on end-user input, Algolia incorporates business relevance with these metrics to further prioritize results.
 
-	Let me know if you have any more questions!
+	I hope that was helpful. Let me know if you have any more questions!
 
 	Best,
 	Colleen
@@ -43,12 +43,12 @@ Answer 2:
 
 	Hi Matt,
 
-	I’m sorry to hear that the new design isn’t as workable for you. Have you tried using an API to update your data? It’s great bulk or frequent editing of indices.
+	I’m sorry to hear that you are finding the the new dashboard to be a bit cumbersome. Have you tried using the API to update your data? It’s great for bulk or frequent editing of indices.
 
 	To clear an index, try using this code:
 		index.clear_index
 
-	And to delete an index by name:
+	To delete an index by name:
 		client.deleteIndex('indexName')
 
 	I hope that improves your work flow! Let me know if I can help with anything else. 
@@ -72,13 +72,10 @@ Answer:
 
 	I would be happy to provide an overview of the integration process. Are you interested in integrating your website with an Algolia API, or doing a platform integration? 
 
-	For integrations with an Algolia API, there are three quick steps once you’ve signed up for an account. It won’t require more than ten lines of code. First, you upload the data through the online dashboard or an API client. Next you’ll configure the relevance of your results by setting the searchable attributes in order of importance, and choosing business metrics for ranking the results. And lastly, you can choose a library such as autocomplete or instant search, to build the best UI and search experience. 
+	For integrations with an Algolia API, there are three quick steps once you’ve signed up for an account. It won’t require more than ten lines of code. First, upload the data through the online dashboard or an API client. Next configure the relevance of your results by setting the searchable attributes and choosing business metrics for ranking. Lastly, choose a library such as autocomplete or instant search, to build the best UI and search experience. 
 
-	Let me know if you have any questions. I am more than willing to jump on a quick call and discuss the process further!
+	Let me know if you have any additional questions. I am more than willing to jump on a quick call and discuss the process further!
 
-	Cheers,
+	Best,
 	Colleen
-
-
-
-
+	

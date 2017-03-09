@@ -27,9 +27,10 @@ export default class Search extends Component {
 
     componentDidMount () {
         // ** get user location
-         navigator.geolocation.getCurrentPosition(function(position) {
-            this.setState({ geoPosition: [position.coords.latitude, position.coords.longitude]})
-            helper.setQueryParameter('aroundLatLng', `${position.coords.latitude}, ${position.coords.longitude}`)
+         navigator.geolocation.getCurrentPosition((position) => {
+            let {latitude, longitude} = position.coords
+            this.setState({ geoPosition: [latitude, longitude]})
+            helper.setQueryParameter('aroundLatLng', `${latitude}, ${longitude}`)
         });        
         if(this.state.geoPosition.length===0){
             helper.setQueryParameter('aroundLatLng','37.786919, -122.397722') // ** Algolia SF office in SOMA
