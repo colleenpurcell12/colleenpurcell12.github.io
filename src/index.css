@@ -327,11 +327,14 @@ ul {
     .restaurant_image{
         width: 4em;
     }
+    .restaurant_list{
+        margin-left: 2em;
+    }
 }
 
 @media (min-width: 1px) and (max-width: 750px)  {
     body {
-        font-size: 16px;
+        font-size: 15px;
     }
     .main-app{
         margin: 6% 5% 3% 5%;
@@ -355,9 +358,6 @@ ul {
     .restaurant_image{
         width: 3.9em;
     }
-    .restaurant_list{
-        margin-left: 2.5em;
-    }
     .restaurant_image{
         margin-right: 1em;
     }    
@@ -366,6 +366,11 @@ ul {
     }
 
 } 
+@media (min-width: 1px) and (max-width: 675px)  {
+    body {
+        font-size: 14px;
+    }
+    }
 @media (min-width: 1px) and (max-width: 650px)  {
     body {
         font-size: 13px;
@@ -393,9 +398,14 @@ ul {
         margin-left: 5.4em;
     }
 }
+@media (min-width: 1px) and (max-width: 575px)  {
+    body {
+        font-size: 12px;
+    }
+}
 @media (min-width: 1px) and (max-width: 500px)  {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
     .search_bar {  
         font-size: .85em;
@@ -405,7 +415,7 @@ ul {
         border: none;        /*float: left;*/
     }
     .results{ 
-        width: 97.75%;
+        width: 98.75%;
     }
     .restaurant_list{
         margin-left: 1.5em;

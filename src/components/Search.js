@@ -21,7 +21,7 @@ export default class Search extends Component {
         this.handleInputChange  = this.handleInputChange.bind(this);
         this.handleClickCuisine = this.handleClickCuisine.bind(this);
         this.handleClickPayment = this.handleClickPayment.bind(this);
-        this.handleShowMore     = this.handleShowMore.bind(this);
+        this.handleToggleMore   = this.handleToggleMore.bind(this);
         this.handleClickRatings = this.handleClickRatings.bind(this);
     }
 
@@ -68,7 +68,8 @@ export default class Search extends Component {
     }
     handleClickRatings(e) {
         let filteredHits=[]
-        let rating = e.target.parentElement.id; // ** star icons are clicked, parent div has id
+        // ** when the star icons are clicked, have to find the id in the parent div
+        let rating = e.target.parentElement.id; 
         this.state.hits.forEach(function(rest) {
             if(rest.stars_count >rating) {
                 filteredHits.push(rest)
@@ -90,7 +91,7 @@ export default class Search extends Component {
         this.setState({ restaurants: filteredHits, numOfHits: filteredHits.length });
     }
     
-    handleShowMore(e){
+    handleToggleMore(e){
         if(this.state.numResultsToShow===4) this.setState({ numResultsToShow: 8 });
         else { this.setState({ numResultsToShow: 4 }); }
     }
@@ -234,13 +235,13 @@ export default class Search extends Component {
                             {
                                 (numResultsToShow===4)? 
                                 <div className='restaurant_button'>
-                                    <p className="restaurants_show_more" onClick={this.handleShowMore}>
+                                    <p className="restaurants_show_more" onClick={this.handleToggleMore}>
                                         Show More
                                     </p>
                                 </div>
                                 :
                                 <div className='restaurant_button'>
-                                    <p className="restaurants_show_more" onClick={this.handleShowMore}>
+                                    <p className="restaurants_show_more" onClick={this.handleToggleMore}>
                                         Show Less
                                     </p>
                                 </div>
